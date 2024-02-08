@@ -2,7 +2,7 @@
 # Day 19: Medicine for Rudolph
 # https://adventofcode.com/2015/day/19
 
-import re, collections
+import re
 
 def a(data):
     helper = dict()
@@ -46,7 +46,15 @@ def b(data):
                         shortest = undo
         target = shortest
         counter += 1
-    return counter   
+    return counter  
+
+def b2(data):
+    MOLECULE = data[-1]
+    elements = len(re.findall(r'[A-Z]', MOLECULE))
+    rn = len(re.findall(r'Rn', MOLECULE))
+    ar = len(re.findall(r'Ar', MOLECULE))
+    y = len(re.findall(r'Y', MOLECULE))
+    return elements - (rn + ar) - (2 * y) - 1
 
 def test():
     print()

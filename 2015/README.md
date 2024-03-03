@@ -2,7 +2,9 @@
     Advent of Code 2015 Solutions
 </h1>
 
-> Collection of my solutions to [Advent of Code 2015](https://adventofcode.com/2015) in Python
+><p align="center">
+> Collection of my solutions to <a href="https://adventofcode.com/2015">Advent of Code 2015</a> in Python
+></p>
 
 ## Context
 
